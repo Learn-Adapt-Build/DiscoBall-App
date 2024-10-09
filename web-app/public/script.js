@@ -172,6 +172,7 @@ function handleNextButtonClick(button, index, buttons) {
     // Store the selected value in the dbAnswers object
     dbAnswers[questionIndex] = parseInt(selectedIntegerValue);
 
+
     if (questionIndex != 31) {
         // Get the previous offset for color mapping
         const prev = prev_offset_arr[questionIndex - 1];
@@ -330,12 +331,12 @@ function submitForm() {
 
     // Append the colored SVG to the display container
     const svgDisplayContainer = document.getElementById('svgDisplayContainer');
-    svgDisplayContainer.innerHTML = ''; // Clear the container
-    svgDisplayContainer.appendChild(clonedSvg); // Add the colored SVG to the container
+    svgDisplayContainer.innerHTML = '';
+    svgDisplayContainer.appendChild(clonedSvg);
 
     // Show the download button
     const downloadButton = document.getElementById('download-button');
-    downloadButton.style.display = 'flex'; // Use 'flex' to make it visible
+    downloadButton.style.display = 'flex'; 
 
 
     // Event listener for the download button
