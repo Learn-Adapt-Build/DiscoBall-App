@@ -296,30 +296,24 @@ function colorSegment(questionIndex, answer, color) {
 
 
 function saveSvg(svgElement, filename) {
-    // Serialize the SVG element to a string
     const serializer = new XMLSerializer();
     const svgString = serializer.serializeToString(svgElement);
 
-    // Encode the SVG string in a data URL
     const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
     const svgUrl = URL.createObjectURL(svgBlob);
 
-    // Create a temporary anchor element and trigger a download
     const downloadLink = document.createElement('a');
     downloadLink.href = svgUrl;
     downloadLink.download = filename;
     document.body.appendChild(downloadLink);
     downloadLink.click();
-    document.body.removeChild(downloadLink); // Remove the anchor element after triggering the download
+    document.body.removeChild(downloadLink);
 
-    // Clean up the URL object
     URL.revokeObjectURL(svgUrl);
 }
 
    
-// Assuming this function is called when all questions are answered
 function submitForm() {
-    // Convert dbAnswers object to an array
     const answersArray = Object.values(dbAnswers);
 
     //console.log(dbAnswers);
