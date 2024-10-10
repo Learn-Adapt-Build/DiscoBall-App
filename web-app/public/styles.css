@@ -18,21 +18,30 @@
 
 .disco-ball-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .disco-ball-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .disco-ball-container svg {
-    padding: 25px;
-    max-height: 80vh;
+    margin: 0 auto;
+    max-height: 60vh;
+    display: block;
+    padding: 20px;
 }
 
 .download-container {
@@ -59,12 +68,13 @@
     color: white;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 15px 50px;
+    margin: 20px auto;
     display: block;
-    width: calc(100% - 42px);
+    width: auto;
     box-sizing: border-box;
     cursor: pointer;
+    text-align: center;
 }
 
 .answer-button, .next-button {
@@ -73,10 +83,12 @@
     border-radius: 20px;
     padding: 10px 20px;
     margin: 5px;
-    display: block;
-    width: calc(100% - 42px);
+    /* display: flex; */
+    width: calc(100% - 50px);
     box-sizing: border-box;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 .answer-button {
@@ -116,12 +128,19 @@ body {
 }
 
 .next-button {
+    display: flex;
     background-color: #007bff;
     color: white;
     font-weight: bold;
     margin-top: 20px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 50px;
 }
 
 .answers {
-    text-align: left;
+    text-align: center;
 }
