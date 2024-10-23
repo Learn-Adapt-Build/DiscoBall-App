@@ -95,5 +95,6 @@ old
 web-app/public/old
 
 # custom - need to sort through
-match_algo/*.csv
+#match_algo/*.csv
 web-app/public/.env.development.local
+*.db

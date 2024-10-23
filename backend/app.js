@@ -7,6 +7,7 @@ const mysql = require('mysql2');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
+  //TODO: use an .env to load password
   password: 'Hola1234', // Enter your MySQL password here
   port:3000,
   database: 'CelebratoryTech'
