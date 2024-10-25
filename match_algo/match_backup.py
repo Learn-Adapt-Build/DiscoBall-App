@@ -20,7 +20,7 @@ for index, row in df.iterrows():
     data.append(user_data)
 
 # matching algorithm for iterations of participant kahoot testing
-participants = [i for i in range(1, 21)]
+participants = [i for i in range(1, 21)] #TODO make range variable
 
 # round 1: random
 # 20 participants, sectioned into 5 groups of 4
