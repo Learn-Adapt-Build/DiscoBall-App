@@ -144,7 +144,7 @@ sorted_participants_2 = sorted(participant_frequency_2.items(), key=lambda x: x[
 
 # Assign participants to the groups
 for idx, key in enumerate(sorted_keys_2):
-    for _ in range(3):  # Each group picks 5 additional connections
+    for _ in range(4):  # Each group picks 5 additional connections
         for person, frequency in sorted_participants_2:
             if person not in assigned_participants:  # Check if not already assigned
                 groups_round2_communications[idx].append(int(person))
@@ -152,12 +152,13 @@ for idx, key in enumerate(sorted_keys_2):
                 break
 
 # Define the range of participant numbers
-numbers = range(1, 21)
+numbers = range(1, 26)
 
 # Initialize a list to store missing participant numbers
 missing_values_2 = []
 
 # Iterate through participant numbers
+
 for num in numbers:
     if num not in assigned_participants:  # Check if not assigned
         missing_values_2.append(num)
@@ -307,7 +308,7 @@ sorted_participants = sorted(participant_frequency.items(), key=lambda x: x[1])
 # Iterate over sorted keys
 for idx, key in enumerate(sorted_keys):
     # Draft-style selection of additional connections
-    for _ in range(3):  # Each group picks 3 additional connections
+    for _ in range(4):  # Each group picks 3 additional connections
         for person, frequency in sorted_participants:
             # Check if person is not already assigned to the current group
             # and not assigned to the next group
