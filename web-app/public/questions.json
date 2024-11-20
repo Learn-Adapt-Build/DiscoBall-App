@@ -29,10 +29,10 @@
   {
       "question": "What sounds like your ideal way to spend your free time?",
       "answers": [
-          ["Other: ______", 1, "#dc6837"],
+          ["Chilling at home with friends", 1, "#dc6837"],
           ["Spending time outside", 2, "#730d94"],
           ["Going out with friends", 3, "#b31176"],
-          ["Chilling at home", 4, "#F1F890"]
+          ["Chilling at home alone", 4, "#F1F890"]
       ]
   },
   {
