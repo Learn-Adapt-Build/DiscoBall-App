@@ -22,7 +22,6 @@ for index, row in df.iterrows():
 
 # matching algorithm for iterations of participant kahoot testing
 participants = [i for i in range(1, 21)]
-'''
 # round 1: random
 # 20 participants, sectioned into 5 groups of 4
 generated = [0,0,0,0,0]
